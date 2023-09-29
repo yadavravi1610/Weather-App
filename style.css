@@ -73,7 +73,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 10px;
     margin-top: 50px;
 }
 
@@ -91,4 +91,14 @@ body{
 .humidity,.Wind{
     font-size: 28px;
     margin-top: -5%;
+}
+
+@media screen and (max-width: 600px)
+{
+    .description{
+        flex-direction: column;
+    }
+    .humidity,.Wind{
+        margin-top: 10%;
+    }
 }
